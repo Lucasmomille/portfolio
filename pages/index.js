@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <Layout page="Home">
       <main className="w-11/12 items-center justify-center mx-auto flex flex-col bg-white dark:bg-black my-16">
-        <h2 className="text-xl text-center text-primary"> Mon portfolio </h2>
+        <h2 className="text-xl text-center text-primary"> Mon portfolio (en cours de réalisation) </h2>
 
 
         <motion.div
