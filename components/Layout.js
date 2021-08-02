@@ -7,7 +7,7 @@ import useDarkMode from "../hooks/useDarkMode";
 export default function Layout({ children, page }) {
 
     const { theme, setTheme } = useState('dark');
-    const { count, setCount } = useState(0)
+    //const { count, setCount } = useState(0)
     const colorTheme = theme === "dark" ? "light" : "dark";
 
     const toggleTheme = () => {
@@ -45,8 +45,6 @@ export default function Layout({ children, page }) {
                     <Link href="/cv">
                         <a href="" className="">CV</a>
                     </Link>
-                    <p>{count} point</p>
-                    <button onClick={() => setCount(count + 1)}>test</button>
                     <p className="cursor-pointer" onClick={toggleTheme}>
                         {colorTheme === "light" ? (
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
