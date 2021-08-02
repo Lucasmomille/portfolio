@@ -1,55 +1,70 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Project from "../components/project"
+import Head from 'next/head';
+import Image from 'next/image';
+import Project from "../components/project";
 import Link from "next/link";
+import Layout from "../components/Layout";
+import { motion } from "framer-motion";
+import useDarkMode from '../hooks/useDarkMode';
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 1,
+      staggerChildren: 0.5
+    }
+  }
+};
 
 export default function Home() {
+  useDarkMode()
   return (
-    <div className="font-nunito">
-      <Head>
-        <title>Lucas Moquet</title>
-        <meta name="description" content="Portfolio de Lucas Moquet" />
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
-        <link rel="icon" href="/favicon.ico" />
+    <Layout page="Home">
+      <main className="w-11/12 items-center justify-center mx-auto flex flex-col bg-white dark:bg-black my-16">
+        <h2 className="text-xl text-center text-primary"> Mon portfolio </h2>
 
-      </Head>
 
-      <header className="w-full text-white bg-green-300 flex lg:flex-row py-3 justify-between px-8">
-        <h1 className="w-6/12">Lucas Moquet - Développeur web</h1>
-        <nav className="flex flex-wrap w-2/12 justify-between">
-          <Link href="/">
-            <a href="" className="">Contact</a>
-          </Link>
-          <Link href="/">
-            <a href="" className="">CV</a>
-          </Link>
-        </nav>
-      </header>
-      <main className="w-11/12 items-center justify-center mx-auto flex flex-col">
-        <h2>Mes projets</h2>
-        <div className="grid grid-cols-3 gap-4 mt-16 mx-auto">
+        <motion.div
+          className="container md:grid md:grid-cols-3 gap-4 mt-16 mx-auto flex flex-col"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
           <Project title="Crypto-watch - tutoriel YT" tech="NextJs & TailwindCSS"
             link="https://crypto-watch-inky.vercel.app/"
-            linkImage="/images/blockchain.jpg" >
+            github="https://github.com/Lucasmomille/crypto_watch"
+            linkImage="/images/blockchain.jpg"
+
+          >
           </Project>
           <Project title="Orinoco - formation OpenClassrooms" tech="Vanilla JS & Bootstrap"
-            link="/"
-            linkImage="/images/blockchain.jpg" >
+            link="https://github.com/Lucasmomille/p5_orinoco"
+            github="https://github.com/Lucasmomille/p5_orinoco"
+            linkImage="/images/orinoco.png"
+
+          >
           </Project>
           <Project title="API REST - formation Openclassrooms " tech="NodeJS, Express, MongoDB"
             link="https://github.com/Lucasmomille/P6_API_REST"
-            linkImage="/images/flame.png" >
+            github="https://github.com/Lucasmomille/P6_API_REST"
+            linkImage="/images/flame.png"
+
+          >
           </Project>
           <Project title="Clone Instagram - tutoriel Free Code Camp " tech="ReactJs, Firebase & TailwindCSS"
             link="https://fcc-insta.vercel.app/"
-            linkImage="/images/insta.jpg" >
+            github="https://github.com/Lucasmomille/FCC-insta"
+            linkImage="/images/insta.jpg"
+
+          >
           </Project>
+        </motion.div>
 
-
-
-        </div>
       </main>
-    </div>
+
+    </Layout>
   )
 }
 
