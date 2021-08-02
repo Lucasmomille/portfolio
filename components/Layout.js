@@ -61,7 +61,7 @@ export default function Layout({ children, page }) {
                 </nav>
             </header>
             {children}
-            <footer className="bg-primary w-full py-3 px-8 text-white">
+            <footer className="bg-primary w-full py-3 px-8 text-white absolute bottom-0">
                 <p>Tel : 0643595532</p>
                 <a href="mailto:lucas.moquet95@gmail.com">lucas.moquet95@gmail.com</a>
             </footer>
