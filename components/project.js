@@ -20,10 +20,11 @@ export default function Project(props) {
                     <Image src={`${props.linkImage}`} alt={`illustration de ${props.title}`} width={400} height={200} loading="lazy" className="rounded-md"></Image>
                 </a>
             </Link>
-            <div>
+            <div className="flex flex-col space-y-2 mt-1">
                 <h3>{props.title}</h3>
                 <p>Projet réalisé avec {props.tech}</p>
-                <a href={`${props.github}`}>GitHub du projet</a>
+                <a className="text-primary" href={`${props.github}`}>GitHub du projet</a>
+                <p>{props.description}</p>
             </div>
 
         </motion.div>

@@ -2,13 +2,10 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import React, { useEffect, useState } from 'react';
-import useDarkMode from "../hooks/useDarkMode";
 
 export default function Layout({ children, page }) {
-
-
     return (
-        <div className="bg-white font-nunito min-h-screen dark:bg-black text-dark dark:text-white">
+        <div className="bg-white font-nunito pb-12 dark:bg-black text-dark dark:text-white">
             <Head>
                 <title>Lucas Moquet, {page}</title>
                 <meta name="description" content="Portfolio de Lucas Moquet" />
@@ -23,15 +20,10 @@ export default function Layout({ children, page }) {
                     </a>
                 </Link>
 
-                <nav className="flex flex-wrap w-2/12 justify-between">
-                    <Link href="/contact">
-                        <a href="" className="">Contact</a>
-                    </Link>
+                <nav className="flex flex-wrap w-1/12 ">
                     <Link href="/cv">
                         <a href="" className="">CV</a>
                     </Link>
-
-
                 </nav>
             </header>
             {children}
