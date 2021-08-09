@@ -64,7 +64,7 @@ export default function Home() {
             link="https://fcc-insta.vercel.app/"
             github="https://github.com/Lucasmomille/FCC-insta"
             linkImage="/images/insta.jpg"
-
+            description="Vous pouvez créer un compte mais je ne fais pas encore les mots de passe oubliés"
           >
           </Project>
         </motion.div>
