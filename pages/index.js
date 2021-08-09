@@ -19,7 +19,6 @@ const container = {
 };
 
 export default function Home() {
-  useDarkMode()
   return (
     <Layout page="Home">
       <main className="w-11/12 items-center justify-center mx-auto flex flex-col bg-white dark:bg-black my-16">

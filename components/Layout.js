@@ -1,28 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useDarkMode from '../hooks/useDarkMode';
 
 export default function Layout({ children, page }) {
-    const [theme, setTheme] = useState("dark");
-
-    const colorTheme = theme === "dark" ? "light" : "dark";
-
-    const toggleTheme = () => {
-        if (theme === "dark") {
-            setTheme('light')
-        } else {
-            setTheme('dark')
-        }
-
-    }
-
-    useEffect(() => {
-        const root = window.document.documentElement;
-        root.classList.remove(colorTheme);
-        root.classList.add(theme);
-    }, [theme, colorTheme]);
-
+    const [colorTheme, toggleTheme] = useDarkMode();
 
     return (
         <div className="bg-white font-nunito pb-12 dark:bg-black text-dark dark:text-white">
@@ -40,7 +23,7 @@ export default function Layout({ children, page }) {
                     </a>
                 </Link>
 
-                <nav className="flex flex-wrap w-2/12 ">
+                <nav className="flex flex-wrap justify-between w-1/12 ">
                     <Link href="/cv">
                         <a href="" className="">CV</a>
                     </Link>
