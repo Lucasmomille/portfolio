@@ -5,15 +5,6 @@ function useDarkMode() {
     const [theme, setTheme] = useState("dark")
     const colorTheme = theme === "dark" ? "light" : "dark";
 
-    /* const toggleTheme = () => {
-        if (theme === "dark") {
-            setTheme('light')
-        } else {
-            setTheme('dark')
-        }
-
-    } */
-
     useEffect(() => {
         const root = window.document.documentElement;
         root.classList.remove(colorTheme);
