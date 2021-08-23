@@ -33,7 +33,7 @@ export default function Home() {
         >
           <Project title="Groupomania frontend - formation OpenClassrooms" tech="CRA & TailwindCSS"
             link="https://p7-groupomania-frontend.vercel.app/login"
-            github="https://github.com/Lucasmomille/crypto_watch"
+            github="https://github.com/Lucasmomille/p7-groupomania-frontend"
             linkImage="/images/groupomania.png"
             description="Pour le moment vous devez installer le backend en local depuis mon GitHub `p7_groupomania_backend`"
           ></Project>
