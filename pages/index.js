@@ -36,20 +36,20 @@ export default function Home() {
             github="https://github.com/Lucasmomille/p7-groupomania-frontend"
             linkImage="/images/groupomania.png"
             description="Pour le moment vous devez installer le backend en local depuis mon GitHub `p7_groupomania_backend`"
+            class=" object-cover"
           ></Project>
 
           <Project title="Crypto-watch - tutoriel YT" tech="NextJs & TailwindCSS"
             link="https://crypto-watch-inky.vercel.app/"
             github="https://github.com/Lucasmomille/crypto_watch"
             linkImage="/images/blockchain.jpg"
-
+            class=" object-cover"
           >
           </Project>
           <Project title="Orinoco - formation OpenClassrooms" tech="Vanilla JS & Bootstrap"
             link="https://github.com/Lucasmomille/p5_orinoco"
             github="https://github.com/Lucasmomille/p5_orinoco"
             linkImage="/images/orinoco.png"
-
           >
           </Project>
           <Project title="API REST - formation Openclassrooms " tech="NodeJS, Express, MongoDB"
@@ -64,6 +64,7 @@ export default function Home() {
             github="https://github.com/Lucasmomille/FCC-insta"
             linkImage="/images/insta.jpg"
             description="Vous pouvez créer un compte mais je ne fais pas encore les mots de passe oubliés"
+            class=" object-cover"
           >
           </Project>
         </motion.div>

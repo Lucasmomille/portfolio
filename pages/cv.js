@@ -12,6 +12,8 @@ export default function CV() {
                             <li>
                                 <ul>
                                     <li>ReactJS</li>
+                                    <li>Vue2/3 & NuxtJS</li>
+                                    <li>TypeScript</li>
                                     <li>TailwindCSS</li>
                                     <li>HTML/CSS/JS</li>
                                     <li>Bootstrap</li>
@@ -37,6 +39,7 @@ export default function CV() {
                 <article className="w-1/3 transform scale-95 border border-gray-300 rounded-md p-4">
                     <h1 className="font-bold">Formations</h1>
                     <ul>
+                        <li>2021/2023 - Développeur d'application React - OpenClassrooms</li>
                         <li>2020/2021 - Développeur web - OpenClassrooms</li>
                         <li>2020 - Prep'Apprentissage - OpenClassrooms</li>
                         <li>2017/2019 - Master 1 & 2 édition imprimée et numérique - Université Toulouse Jean Jaurès</li>
@@ -46,6 +49,7 @@ export default function CV() {
                 <article className="w-1/3 transform scale-95 border border-gray-300 rounded-md p-4">
                     <h1 className="font-bold">Expériences</h1>
                     <ul>
+                        <li>2021/2022 - Alternant développeur front-end - Loisirs Enchères</li>
                         <li>2021 - Alternant développeur web - agence Lewys</li>
                         <li>2019 - Assitant d'édition - éditions Sud Ouest</li>
                         <li>2014/2018 - Assistant d'édition/stages - (Le Bord de l'eau, Anacharsis, Presses universitaires de Bordeaux)</li>
