@@ -1,10 +1,6 @@
-import Head from 'next/head';
-import Image from 'next/image';
 import Project from "../components/project";
-import Link from "next/link";
 import Layout from "../components/Layout";
 import { motion } from "framer-motion";
-import useDarkMode from '../hooks/useDarkMode';
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -59,14 +55,14 @@ export default function Home() {
 
           >
           </Project>
-          <Project title="Clone Instagram - tutoriel Free Code Camp " tech="ReactJs, Firebase & TailwindCSS"
+          {/* <Project title="Clone Instagram - tutoriel Free Code Camp " tech="ReactJs, Firebase & TailwindCSS"
             link="https://fcc-insta.vercel.app/"
             github="https://github.com/Lucasmomille/FCC-insta"
             linkImage="/images/insta.jpg"
             description="Vous pouvez créer un compte mais je ne fais pas encore les mots de passe oubliés"
             class=" object-cover"
           >
-          </Project>
+          </Project> */}
         </motion.div>
 
       </main>
